@@ -1,0 +1,118 @@
+:root{
+    font-size: 16px;
+    font-family: monospace;
+}
+.body{
+    margin:0px;
+    padding: 0px;
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: 4vw;
+    border-color: #2c2c2c;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 10px 3px 20px 2px #2c2c2c;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
+    background-color: #fffff;
+    
+}
+li a {
+    
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.active {
+    background-color: #555F50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    background-image: url('images/background_image3.png');
+   /* background-repeat:no-repeat;*/
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.banner .card{
+    padding: 20px;
+    margin: 10px;
+    width: 55vw;
+    font-size: 2rem;
+    background-color: rgba(50, 0, 0, 0.5);
+    border-color: black;
+    border-style: solid;
+}
+.my-image {
+    background-color: whitesmoke!important;
+    border: 1px solid #35eea4;
+    border-radius: 5px;
+    box-shadow: 20px 3px 20px 2px #2c2c2c;
+    width: 15vw;
+    height: 20vw;
+    padding: 2vw;
+}
+.content{
+    margin-top: 10px;
+    background-color: grey;
+    padding: 10px
+}
+.ContentStyling{
+    background-color: black;
+}
+.content_heading{
+    font-family: cursive;
+    background-color: azure;
+    padding: 10px;
+}
+@media only screen and (max-width:450px) {
+    ul{
+    flex-direction: column;
+        padding: 10px;
+        border-color: aquamarine
+    }
+    li{
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .banner{
+    
+    flex-direction:column;
+ 
+}
+    
+    .my-image {
+        border: 1px solid #35eea4;
+    border-radius: 5px;
+    box-shadow: 20px 3px 20px 2px #2c2c2c;
+    width: 60vw;
+    height: 60vw;
+    padding: 2vw;
+    }
+    
+    .content{
+        font-size: 1.2rem;
+    }
+    
+    
+   
+}
